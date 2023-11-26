@@ -1,0 +1,18 @@
+{
+  "name": "es_tim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx tsc && node dist/app.js",
+    "dev": "nodemon dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leandro Buzzi",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+}
