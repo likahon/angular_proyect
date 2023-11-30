@@ -1,0 +1,10 @@
+.game_list_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game_list_container li{
+    display: flex;
+    flex-direction: column;
+}

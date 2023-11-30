@@ -1,0 +1,13 @@
+<h1>Catálogo</h1>
+<ul class="game_list_container">
+    <li *ngFor="let game_info of games_list">
+        <span>Nombre: {{game_info.name}}</span>
+        <span>CPU: {{game_info.reqPC["pc_cpu"]}}</span>
+        <span>RAM: {{game_info.reqPC["pc_ram"]}}</span>
+        <span>Almacenamiento: {{game_info.reqPC["pc_hdd"]}}</span>
+<!--         <span>Género: {{game_info.genre["name"]}}</span>
+        <span>PEGI: {{game_info.genre["gen_pegi"]}}</span> -->
+        <span>Tipo: {{game_info.game_type}}</span>
+        <span>Precio: {{game_info.price}}</span>
+    </li>
+</ul>
