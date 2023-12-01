@@ -7,6 +7,10 @@ import { CreateGamesComponent } from './modules/games/pages/create-games/create-
 import { EditGamesComponent } from './modules/games/pages/edit-games/edit-games.component';
 import { GamesListComponent } from './modules/games/components/games-list/games-list.component';
 import { FormGenreComponent } from './modules/games/components/form-genre/form-genre.component';
+import { EditGenreComponent } from './modules/games/pages/edit-genre/edit-genre.component';
+import { CreateGenreComponent } from './modules/games/pages/create-genre/create-genre.component';
+import { RedOnHoverDirective } from './dom-dir-lists.directive';
+import { OrderByPricePipe } from './modules/games/pipes/order-by-price.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { FormGenreComponent } from './modules/games/components/form-genre/form-g
     CreateGamesComponent,
     EditGamesComponent,
     GamesListComponent,
-    FormGenreComponent
+    FormGenreComponent,
+    EditGenreComponent,
+    CreateGenreComponent,
+    RedOnHoverDirective,
+    OrderByPricePipe
   ],
   imports: [
     BrowserModule

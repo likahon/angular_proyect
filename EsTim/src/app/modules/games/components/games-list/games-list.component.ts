@@ -5,7 +5,7 @@ interface game_list {
   name: string;
   reqPC: { [key: string]: string };
   genre: number;
-  price: string;
+  price: number;
   game_type: string;
 }
 
@@ -23,17 +23,22 @@ interface game_genres {
 })
 export class GamesListComponent {
 
-    games_list: game_list[] = [
+  games_list: game_list[] = [];
+  games_genres: game_genres[] = [];
+
+
+  ngOnInit() {
+    this.games_list = [
       {
         id: 1,
-          name: "Fuego Fantástico",
+          name: "Fuego fantástico",
           reqPC: {
             pc_cpu: "Intel Core i5",
             pc_ram: "8GB",
             pc_hdd: "40GB"
           },
           genre: 1,
-          price: "20 USD",
+          price: 20,
           game_type: "Full"
       },
       {
@@ -45,7 +50,7 @@ export class GamesListComponent {
             pc_hdd: "40GB"
           },
           genre: 3,
-          price: "30 USD",
+          price: 30,
           game_type: "Full"
       },
       {
@@ -57,7 +62,7 @@ export class GamesListComponent {
             pc_hdd: "40GB"
           },
           genre: 5,
-          price: "15 USD",
+          price: 15,
           game_type: "DLC"
       },
       {
@@ -69,7 +74,7 @@ export class GamesListComponent {
             pc_hdd: "40GB"
           },
           genre: 2,
-          price: "25 USD",
+          price: 25,
           game_type: "Full"
       },
       {
@@ -81,7 +86,7 @@ export class GamesListComponent {
             pc_hdd: "40GB"
           },
           genre: 1,
-          price: "18 USD",
+          price: 18,
           game_type: "Full"
       },
       {
@@ -93,7 +98,7 @@ export class GamesListComponent {
             pc_hdd: "40GB"
           },
           genre: 3,
-          price: "40 USD",
+          price: 40,
           game_type: "DLC"
       },
       {
@@ -105,7 +110,7 @@ export class GamesListComponent {
             pc_hdd: "40GB"
           },
           genre: 6,
-          price: "35 USD",
+          price: 35,
           game_type: "Full"
       },
       {
@@ -117,7 +122,7 @@ export class GamesListComponent {
             pc_hdd: "40GB"
           },
           genre: 1,
-          price: "50 USD",
+          price: 50,
           game_type: "Full"
       },
       {
@@ -129,7 +134,7 @@ export class GamesListComponent {
             pc_hdd: "40GB"
           },
           genre: 2,
-          price: "22 USD",
+          price: 22,
           game_type: "DLC"
       },
       {
@@ -141,12 +146,12 @@ export class GamesListComponent {
             pc_hdd: "40GB"
           },
           genre: 3,
-          price: "33 USD",
+          price: 33,
           game_type: "Full"
       }
     ];
 
-    games_genres: game_genres[] = [
+    this.games_genres = [
         {
             id: 1,
             name: "Aventura",
@@ -178,8 +183,5 @@ export class GamesListComponent {
             game_pegi: "9"
         },
     ];
-
-
-
-
+  }
 }
