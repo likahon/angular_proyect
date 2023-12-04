@@ -1,4 +1,5 @@
 <h1>Catálogo</h1>
+<button routerLink="/games/create">Agregar Juego</button>
 
 <ul class="game_list_container">
     <li *ngIf="games_list.length === 0; else gamesCatalog">
@@ -7,14 +8,17 @@
 
     <ng-template #gamesCatalog>
         <li *ngFor="let game_info of games_list | orderByPrice" appRedOnHover>
-            <span>Nombre: {{game_info.name | titlecase }}</span>
-            <span>CPU: {{game_info.reqPC["pc_cpu"]}}</span>
-            <span>RAM: {{game_info.reqPC["pc_ram"]}}</span>
-            <span>Almacenamiento: {{game_info.reqPC["pc_hdd"]}}</span>
-            <!--    <span>Género: {{game_info.genre["name"]}}</span>
-                <span>PEGI: {{game_info.genre["gen_pegi"]}}</span> -->
+            <div [routerLink]="[game_info.id]">
+                <span>Nombre: {{game_info.name | titlecase }}</span>
+                <span>CPU: {{game_info.reqPC["pc_cpu"]}}</span>
+                <span>RAM: {{game_info.reqPC["pc_ram"]}}</span>
+                <span>Almacenamiento: {{game_info.reqPC["pc_hdd"]}}</span>
+                <!--    <span>Género: {{game_info.genre["name"]}}</span>
+                    <span>PEGI: {{game_info.genre["gen_pegi"]}}</span> -->
                 <span>Tipo: {{game_info.game_type}}</span>
                 <span>Precio: {{game_info.price}}</span>
+            </div>
+            
             </li>
         </ng-template>
 </ul>
