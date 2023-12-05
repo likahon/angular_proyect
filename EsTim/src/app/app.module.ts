@@ -4,21 +4,29 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 
-import { GamesComponent } from './modules/employee/pages/games/games.component';
+import { GamesComponent } from './modules/games/pages/games/games.component';
 import { HomeModule } from './modules/home/home.module';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsComponent } from './modules/genres/pages/forms/forms.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    GamesComponent
+    GamesComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+  
+
+ }
