@@ -8,7 +8,7 @@ import { CreateEditCategoriesComponent } from './modules/forms/create-edit-categ
 import { CreateEditGameComponent } from './modules/forms/create-edit-game/create-edit-game.component';
 import { CreateGameComponent } from './modules/pages/create-game/create-game.component';
 import { EditGameComponent } from './modules/pages/edit-game/edit-game.component';
-import { SortyByPipe } from './modules/component/catalog/sorty-by.pipe';
+import { SortyByPipe } from './shared/pipes/sorty-by.pipe';
 
 @NgModule({
   declarations: [
