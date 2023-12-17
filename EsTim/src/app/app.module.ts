@@ -8,7 +8,6 @@ import { CreateEditCategoriesComponent } from './modules/forms/create-edit-categ
 import { CreateEditGameComponent } from './modules/forms/create-edit-game/create-edit-game.component';
 import { CreateGameComponent } from './modules/pages/create-game/create-game.component';
 import { EditGameComponent } from './modules/pages/edit-game/edit-game.component';
-import { SortyByPipe } from './shared/pipes/sorty-by.pipe';
 
 @NgModule({
   declarations: [
@@ -17,8 +16,7 @@ import { SortyByPipe } from './shared/pipes/sorty-by.pipe';
     CreateEditCategoriesComponent,
     CreateEditGameComponent,
     CreateGameComponent,
-    EditGameComponent,
-    SortyByPipe
+    EditGameComponent
   ],
   imports: [
     BrowserModule,
