@@ -51,7 +51,7 @@ export class CatalogComponent {
           gpu: "Nvidia RTX3050",
           os: "Windows"
         },
-        price: 5000
+        price: 10000
       }
     ]
   }

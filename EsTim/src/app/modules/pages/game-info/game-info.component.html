@@ -1,1 +1,26 @@
-<p>game-info works!</p>
+<div class="game-info-container-ft">
+    <div class="game-info-container-sn">
+        <img src="../../../../assets/img/games-catalog/{{game?.img}}" alt="">
+        <div class="game-info-txt">
+            <div>
+                <span style="font-weight: bold; text-align: center; font-size: 40px;">{{game?.name}}</span>
+                <span>{{game?.company}}</span>
+                <span>{{game?.requeriments?.cpu}}</span>
+                <span>{{game?.requeriments?.ram}}</span>
+                <span>{{game?.requeriments?.gpu}}</span>
+                <span>{{game?.requeriments?.os}}</span>
+               
+            </div>
+            <span style="width : 100%; text-align: right;font-weight: bold; font-size: 30px;">${{game?.price}}</span>
+        </div>
+    </div>
+    <div class="buttons_game_info">
+        <div>
+            <button class="edit" routerLink="/edit-game"> Editar Juego</button>
+            <button class="edit" (click)="editGame()"> Editar Juego2</button>
+        </div>
+<!--         <div>
+            <button class="edit" routerLink="/edit-game/{{ game?.id }}/edit-game"> Comprar Juego</button>
+        </div> -->
+    </div>
+  </div>

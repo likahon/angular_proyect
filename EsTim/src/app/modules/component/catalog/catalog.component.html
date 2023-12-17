@@ -4,7 +4,7 @@
         <li *ngIf="games_catalog.length === 0 else games_list">Actualmente no hay juegos disponibles</li>
 
         <ng-template #games_list>
-            <li class="card" *ngFor="let game of games_catalog | sortyBy" appCatalogGames [routerLink]="['/game-info', game.id]">
+            <li class="card" *ngFor="let game of games_catalog | sortyBy" appCatalogGames [routerLink]="[game.id]">
                 <img src="{{game.img}}" alt="">
                 <div>
                     <span>{{game.name | titlecase}}</span>
