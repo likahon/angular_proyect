@@ -1,9 +1,33 @@
 html{
     height: 100vh;
-    width: 100vw;
+    width: calc(100vw - 7px);
     background-color: #1B2838;
 }
 
 body{
     margin: 0px;
+    
 }
+
+/* Estilo para la barra de desplazamiento en sí */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Estilo para la pista de la barra de desplazamiento */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    background-color: #2b405a;
+
+  }
+  
+  /* Estilo para el control deslizable de la barra de desplazamiento */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 15px;
+  }
+  
+  /* Estilo para el control deslizable al pasar el mouse */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff7b00;
+  }

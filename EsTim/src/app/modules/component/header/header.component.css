@@ -4,7 +4,7 @@
   }
 
 header{
-    height: 30px;
+    height: 100px;
     font-family: "latoBlack";
     background-color: #171D25;
     color: #C5C3C0;
@@ -45,4 +45,20 @@ header ul{
     padding: 0; /* Elimina los rellenos internos */
     color: #dcdedf;
     font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+header li{
+    height: 100%;
+    width: 10rem;
+}
+
+header li a:hover{
+    color: white;
+}
+
+nav{
+    width: 50rem;
 }

@@ -1,0 +1,30 @@
+<div class="create-edit-game-form card col-8">
+    <form>
+        <label for="title">Título del juego
+            <input id="title" type="text" placeholder="Ingrese el título del juego">
+        </label>
+        <label for="req-CPU"> Mínimo CPU
+            <input id="req-CPU" type="text" placeholder="Ingrese el CPU requerido">
+        </label>
+        <label for="req-RAM"> Mínimo RAM
+            <input id="req-RAM" type="text" placeholder="Ingrese la RAM requerida">
+        </label>
+        <label for="req-GPU"> Mínimo GPU
+            <input id="req-GPU" type="text" placeholder="Ingrese la GPU requerida">
+        </label>
+        <label for="req-SO"> Sistema Operativo
+            <input id="req-SO" type="text" placeholder="Ingrese el Sistema Operativo requerido">
+        </label>
+        <label for="category"> Categoría
+            <input id="category" type="text" placeholder="Ingrese la categoría del juego">
+        </label>
+        <label for="company"> Desarrolladora
+            <input id="company" type="text" placeholder="Ingrese la desarrolladora del juego">
+        </label>
+        <label for="price"> Precio
+            <input id="price" type="text" placeholder="Ingrese el precio del juego">
+        </label>
+    </form>
+
+    <ng-content select="[button-games]"></ng-content>
+</div>
