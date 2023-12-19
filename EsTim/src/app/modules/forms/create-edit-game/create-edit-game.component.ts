@@ -12,12 +12,10 @@ export class CreateEditGameComponent implements OnInit, OnChanges{
   }
   
   ngOnChanges(changes: SimpleChanges): void {
-    console.log("hola perro3");
         
   }
   
   ngOnInit(): void {
-    console.log("hola perro2");
       
   }
   
