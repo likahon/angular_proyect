@@ -27,6 +27,76 @@
           "os": "Windows 10"
         },
         "price": 10000
+      },
+      {
+        "id": 2,
+        "img": "../../../../assets/img/games-catalog/red-dead-redemption.jpeg",
+        "name": "Red Dead Redemption 2",
+        "company": "Rockstar Games",
+        "category": "Shooter",
+        "requirements": {
+          "cpu": "Intel i7",
+          "ram": "8GB",
+          "gpu": "Nvidia RTX3050",
+          "os": "Windows 10"
+        },
+        "price": 10000
+      },
+      {
+        "id": 2,
+        "img": "../../../../assets/img/games-catalog/red-dead-redemption.jpeg",
+        "name": "Red Dead Redemption 2",
+        "company": "Rockstar Games",
+        "category": "Shooter",
+        "requirements": {
+          "cpu": "Intel i7",
+          "ram": "8GB",
+          "gpu": "Nvidia RTX3050",
+          "os": "Windows 10"
+        },
+        "price": 10000
+      },
+      {
+        "id": 2,
+        "img": "../../../../assets/img/games-catalog/red-dead-redemption.jpeg",
+        "name": "Red Dead Redemption 2",
+        "company": "Rockstar Games",
+        "category": "Shooter",
+        "requirements": {
+          "cpu": "Intel i7",
+          "ram": "8GB",
+          "gpu": "Nvidia RTX3050",
+          "os": "Windows 10"
+        },
+        "price": 10000
+      },
+      {
+        "id": 2,
+        "img": "../../../../assets/img/games-catalog/red-dead-redemption.jpeg",
+        "name": "Red Dead Redemption 2",
+        "company": "Rockstar Games",
+        "category": "Shooter",
+        "requirements": {
+          "cpu": "Intel i7",
+          "ram": "8GB",
+          "gpu": "Nvidia RTX3050",
+          "os": "Windows 10"
+        },
+        "price": 10000
+      },
+      {
+        "id": 2,
+        "img": "../../../../assets/img/games-catalog/red-dead-redemption.jpeg",
+        "name": "Red Dead Redemption 2",
+        "company": "Rockstar Games",
+        "category": "Shooter",
+        "requirements": {
+          "cpu": "Intel i7",
+          "ram": "8GB",
+          "gpu": "Nvidia RTX3050",
+          "os": "Windows 10"
+        },
+        "price": 10000
       }
     ]
   }
