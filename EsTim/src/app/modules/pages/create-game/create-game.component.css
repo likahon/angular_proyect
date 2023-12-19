@@ -1,0 +1,16 @@
+.create-game-container{
+    background: linear-gradient(#253447, #16526b);
+}
+
+.title-container-games-form{ 
+    margin: 20px auto 20px auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+button{
+    height: max-content;
+    padding: 8px;
+    margin: 15px 10px 0 10px;
+}

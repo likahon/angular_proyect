@@ -1,0 +1,9 @@
+<div class="edit-game-container">
+    <div class="title-container-games-form col-8">
+        <h2>{{title_form}}</h2>
+    </div>
+
+    <app-create-edit-game>
+        <button button-games type="submit" class="btn btn-primary" (click)="funcionDelBoton()" [disabled] = '!habilitar'>Editar Juego</button>
+    </app-create-edit-game>
+</div>

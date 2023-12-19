@@ -1,0 +1,48 @@
+
+.catalog_class{
+    background: linear-gradient(#253447, #16526b);
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+li{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 7px 15px 7px;
+    cursor: pointer;
+    transition: transform 0.15s ease-in-out;
+    border: 0px;
+    background: linear-gradient(#253447, #16526b);
+}
+
+li div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#2b405a, #227EA5);
+    color: white;
+    border: 0px;
+}
+
+li:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    background: linear-gradient(#2b405a, #227EA5);
+    border: 0px;
+
+}
+
+img{
+    width: 200px;
+    border-radius: 0px 0px 0px 0px;
+}

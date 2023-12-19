@@ -1,30 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
-
-import { GamesComponent } from './modules/games/pages/games/games.component';
-import { HomeModule } from './modules/home/home.module';
-import { HttpClientModule } from '@angular/common/http';
+import { ModulesModule } from './modules/modules.module';
+import { HeaderComponent } from './modules/component/header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    GamesComponent
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule,
-    HttpClientModule
+    ModulesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
-
-  
-
- }
+export class AppModule { }
